@@ -1,5 +1,5 @@
 # `@eropple/nestjs-auth-example` #
-This project exists to demonstrate how to use [`@eropple/nestjs-auth`]().
+This project exists to demonstrate how to use [@eropple/nestjs-auth]().
 `@eropple/nestjs-auth` requires some initial setup and some careful
 consideration when you're layering it into a project, and hopefully some study
 of this example project can help you get your own off the ground.
@@ -31,5 +31,5 @@ tests, which are integrated with `@eropple/nestjs-auth`, with `yarn test:e2e`.
   read or edit them. It owns the `record/*` rights subtree.
 
 
-[`@eropple/nestjs-auth`]: https://github.com/eropple/nestjs-auth
+[@eropple/nestjs-auth]: https://github.com/eropple/nestjs-auth
 [module injection]: https://github.com/eropple/nestjs-auth#module-injection
