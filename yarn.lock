@@ -18,10 +18,10 @@
     esutils "^2.0.2"
     js-tokens "^4.0.0"
 
-"@eropple/nestjs-auth@0.1.1":
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/@eropple/nestjs-auth/-/nestjs-auth-0.1.1.tgz#1793f98cd875d20217a42d9e21d099abb9f6050a"
-  integrity sha512-dvEULH7TDN2FEDYSajpmolc9q0eHV8RsD80jN34TjfKuwPgcBoQyPWJgpvyobVCN5qgiFZMbVFkYBimC1Ae/HQ==
+"@eropple/nestjs-auth@0.2.0":
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/@eropple/nestjs-auth/-/nestjs-auth-0.2.0.tgz#be5a73a2b58af7baa7c4b5d55177020b5a501c2d"
+  integrity sha512-P43IwJvXNEDvJ9Vtz2q9GspM0UlsSdoMidEVcxM1PkwJnuwdPb5ryKYgaDSJ++VKy/M6Wo/fbyFKcSOLAVPJvQ==
   dependencies:
     "@types/bunyan" "^1.8.6"
     "@types/bunyan-blackhole" "^0.2.2"

@@ -20,7 +20,7 @@
     "test:e2e": "jest --detectOpenHandles --config ./test/jest-e2e.json"
   },
   "dependencies": {
-    "@eropple/nestjs-auth": "0.1.1",
+    "@eropple/nestjs-auth": "0.2.0",
     "@eropple/nestjs-bunyan-logger": "0.1.1",
     "@nestjs/common": "6.0.0",
     "@nestjs/core": "6.0.0",

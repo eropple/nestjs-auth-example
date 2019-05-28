@@ -36,7 +36,7 @@ export class RecordService {
       // record object in it so the `right` functions (for, say,
       // `record/:fileId/view`) have it to access without needing scope info
       // outside its own node.
-      context: async (scopePart, _request, locals) => {
+      context: async (scopePart, request) => {
         const record = await this.getRecordByName(scopePart);
         
         // context functions can signal that it is impossible for any child
@@ -52,12 +52,12 @@ export class RecordService {
           return false;
         }
 
-        locals.record = record;
+        request.locals.record = record;
       },
       children: {
         view: {
-          right: (_scopePart, request, locals) => {
-            const record: Record = locals.record;
+          right: (_scopePart, request) => {
+            const record: Record = request.locals.record;
 
             // this is admittedly a bit of a casting hack, but we have proven to
             // our satisfaction that this will always hold.
@@ -68,8 +68,8 @@ export class RecordService {
           }
         },
         edit: {
-          right: (_scopePart, request, locals) => {
-            const record: Record = locals.record;
+          right: (_scopePart, request) => {
+            const record: Record = request.locals.record;
 
             return  (request.identity instanceof IdentifiedBill &&
                       record.usersWithEditAccess.includes((request.identity as AppIdentifiedBill).principal.username)

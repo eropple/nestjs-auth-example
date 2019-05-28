@@ -31,4 +31,3 @@ which are integrated with `@eropple/nestjs-auth`, with `yarn test:e2e`.
 - The `RecordService` manages CRUD operations for an arbitrary `Record` type,
   which contains a single string as data and some simple ACLs around who can
   read or edit them. It owns the `record/*` rights subtree.
-
