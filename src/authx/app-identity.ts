@@ -1,6 +1,10 @@
-import { IdentifiedBill, IdentityBill, AnonymousBill } from "@eropple/nestjs-auth";
+import {
+  IdentifiedBill,
+  IdentityBill,
+  AnonymousBill,
+} from '@eropple/nestjs-auth';
 
-import { User } from "../login/user";
+import { User } from '../login/user';
 
 export type AppIdentifiedBill = IdentifiedBill<User, string>;
 

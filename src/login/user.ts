@@ -1,5 +1,3 @@
 export class User {
-  constructor(
-    readonly username: string
-  ) {}
+  constructor(readonly username: string) {}
 }

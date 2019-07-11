@@ -4,16 +4,16 @@ import { AppIdentityBill, AppIdentifiedBill } from './authx/app-identity';
 
 @Controller()
 export class AppController {
-  @Get("hello")
+  @Get('hello')
   @AuthnOptional()
   @AuthzScope([])
   hello(@Identity() identity: AppIdentityBill): { message: string } {
     if (identity.isAnonymous) {
-      return { message: "Hello, stranger!" };
+      return { message: 'Hello, stranger!' };
     }
-    
+
     return {
-      message: `Hello, ${(identity as AppIdentifiedBill).principal.username}!`
+      message: `Hello, ${(identity as AppIdentifiedBill).principal.username}!`,
     };
   }
 }

@@ -7,7 +7,7 @@ export class Record {
     content: string,
     readonly isPublic: boolean,
     readonly usersWithReadAccess: ReadonlyArray<string>,
-    readonly usersWithEditAccess: ReadonlyArray<string>
+    readonly usersWithEditAccess: ReadonlyArray<string>,
   ) {
     this.content = content;
     this.lastEditor = null;

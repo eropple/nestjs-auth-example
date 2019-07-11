@@ -7,7 +7,7 @@ import { User } from '../login/user';
 @Controller('me')
 export class MeController {
   @Get()
-  @AuthzScope(["user/view"])
+  @AuthzScope(['user/view'])
   whoami(@Identity() identity: AppIdentifiedBill): User {
     // One note: we use `AppIdentifiedBill` here because we are guaranteed to
     // not have an anonymous identity (because, remember, @eropple/nestjs-auth

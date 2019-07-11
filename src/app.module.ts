@@ -5,9 +5,8 @@ import { AuthxModule } from './authx/authx.module';
 import { MeModule } from './me/me.module';
 import { RecordModule } from './record/record.module';
 
-
 @Module({
   imports: [LoginModule, AuthxModule, MeModule, RecordModule],
-  controllers: [AppController]
+  controllers: [AppController],
 })
 export class AppModule {}
