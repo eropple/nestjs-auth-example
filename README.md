@@ -23,9 +23,9 @@ which are integrated with `@eropple/nestjs-auth`, with `yarn test:e2e`.
   the rest of the application.
 - The `AuthxModule` performs the necessary [module
   injection](https://github.com/eropple/nestjs-auth#module-injection) on behalf
-  of `@eropple/nestjs-auth`. It contains the root of the rights tree (though it
+  of `@eropple/nestjs-auth`. It contains the root of the rights tree--though it
   refers out to services that manage subtrees of it, which is the cleanest way
-  I've found to avoid having big sprawling methods) and 
+  I've found to avoid having big sprawling methods. 
 - The `MeModule` contains endpoints related to the current user. It owns the
   `user/*` rights subtree.
 - The `RecordService` manages CRUD operations for an arbitrary `Record` type,
